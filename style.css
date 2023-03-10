@@ -208,3 +208,35 @@ footer {
 .img img{
     width: 100%;
 }
+
+@media(max-width: 680px ){
+    .principal{
+        width: 80%;
+    }
+    .principal__img{
+        width: 85%;
+    }
+    .principal__texto{
+        font-size: 1.5rem;
+        
+    }
+
+    .sessoes__titulo{
+        font-size: 2.5em;
+        padding-left: 0;
+    } 
+    .sessoes__personagens{
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 20px;
+    }   
+    
+    .card {
+        width: 85%;
+    }
+    .text {
+        width: 85%;
+        padding-left: 0;
+
+    }
+}
