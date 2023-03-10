@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'hollow';
+    src: url(font/TrajanPro-Regular.ttf);
+}
+@font-face {
+    font-family: 'hollow_black';
+    src: url(font/TrajanPro-Bold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'hollow';
+    color: white;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/fundo.gif);
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+.principal{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+
+}
+.principal__img{
+    width: 80%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.principal__traco{
+    width: 80%;
+}
+.principal__texto{
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 10px #fff;
+    line-height: 1.5;
+}
+
+.sessoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sessoes__titulo{
+    width: 80%;
+    font-family: 'hollow_black';
+    font-size: 3em;
+    padding-left: 25px;
+    border-bottom: 3px solid white;
+    margin-bottom: 25px;
+    margin-top: 5%;
+}
+.sessoes__personagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 1 1 650px;
+}
+
+.card{
+    width: 25%;
+    height: 300px;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: #ffffff1a;
+    border-radius: 15px;
+    transition: all 300ms;
+    
+}
+
+.fundo__card{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.fundo__card:hover{
+    box-shadow: 0 0 10px 5px #fff;
+}
+
+.fundo__card img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+}
+.card:hover .fundo__card img{
+    transform: scale(1.1);
+}
+.text{
+    width: 50%;
+    padding-left: 2rem;
+}
+.text > h2{
+    padding: 20px 0;
+    font-size: 2rem;
+    font-family: 'hollow_black';
+    
+}
+.text > p{
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+
+.mapas{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10px;
+}
+.mapas > div{
+    width: 350px;
+    margin: 3px;
+    transition: all 300ms;
+    border: 3px solid white;
+}
+.mapas > div > img{
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+.mapas > div:hover{
+    transform: scale(.9);
+}
+.mapas > div > img:hover{
+    transition: all .5s;
+    opacity: 0;
+}
+.mp1{
+    background-image: url(img/mapa/1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mp2{
+    background-image: url(img/mapa/2-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mp3{
+    background-image: url(img/mapa/3-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mp4{
+    background-image: url(img/mapa/6-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mp5{
+    background-image: url(img/mapa/7-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mp6{
+    background-image: url(img/mapa/8-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.img{
+    width: 10em;
+}
+.img img{
+    width: 100%;
+}
