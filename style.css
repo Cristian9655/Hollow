@@ -240,3 +240,17 @@ footer {
 
     }
 }
+
+@media(max-height: 450px ){
+    .principal{
+        width: 100%;
+        padding: 20px;
+    }
+    .principal__img{
+        width: 50%;
+    }
+    .principal__texto{
+        font-size: 1.4rem;
+        
+    }
+}
