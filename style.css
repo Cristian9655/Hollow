@@ -247,10 +247,10 @@ footer {
         padding: 20px;
     }
     .principal__img{
-        width: 50%;
+        width: 40%;
     }
     .principal__texto{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         
     }
 }
